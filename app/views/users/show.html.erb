@@ -1,0 +1,27 @@
+<div id="createRibbit" class="panel right">
+	<h1>Create Ribbit</h1>
+	<p>
+		<form>
+			<textarea name="text" class="ribbitText"></textarea>
+			<input type="submit" value="Ribbit!"/>
+		</form>
+	</p>
+</div>
+<div id="ribbits" class="panel left">
+	<h1>Your Ribbit Profile</h1>
+	<div class="ribbitWrapper">
+		<img class="avatar" src="<%= @user.avatarurl %>"/>
+		<span class="name"><%= @user.name %></span> @ <%= @user.username %>
+		<p>
+			XX ribbits
+			<span class="spacing">XX Followers</span>
+			<span class="spacing">XX Following</span>
+		</p>
+	</div>
+</div>
+<div class="panel left">
+	<h1>Your Ribbits</h1>
+	<div class="ribbitWrapper">
+		Ribbits Coming
+	</div>
+</div>

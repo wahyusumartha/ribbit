@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(:version => 20130113072409) do
     t.string   "username"
     t.string   "name"
     t.string   "email"
-    t.string   "passworddigest"
+    t.string   "password_digest"
     t.string   "avatarurl"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

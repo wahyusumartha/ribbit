@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
-  before_validation :prep_email
-  before_save :create_avatar_hash
+ before_validation :prep_email
+ before_save :create_avatar_hash
 
   attr_accessible :avatarurl, :email, :name, :password, :password_confirmation, :username
 
@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
   end
 
   def create_avatar_hash
-  	self.avatar_url = "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(self.email)}?s=50"
+  	self.avatarurl = "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(self.email)}?s=50"
   end
 
 end

@@ -17,6 +17,10 @@ class UsersController < ApplicationController
 	def show 
 		@ribbit = Ribbit.new
 		@user = User.find(params[:id])
+		@relationship = Relationship.where(
+				follower_id: current_user.id, 
+				followed_id: @user.id
+			).first_or_initialize if current_user
 	end
 
 end

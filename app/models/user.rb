@@ -1,3 +1,5 @@
+require 'digest/md5'
+
 class User < ActiveRecord::Base
 
  before_validation :prep_email
@@ -9,14 +11,22 @@ class User < ActiveRecord::Base
 
   has_many :ribbits
 
-  has_many :follower_relationship, classname: "Relationship", foreign_key: "followed_id"
-  has_many :followed_relationship, classname: "Relationship", foreign_key: "follower_id"
+  has_many :follower_relationship, class_name: "Relationship", foreign_key: "followed_id"
+  has_many :followed_relationship, class_name: "Relationship", foreign_key: "follower_id"
   has_many :followers, through: :follower_relationship
   has_many :followeds, through: :followed_relationship
   
   validates :name, :presence => true
   validates :username, :presence => true, :uniqueness => true 
   validates :email, :presence => true, :uniqueness => true, :format => { with: /^[\w\.+-]+@([\w]+\.)+\w+$/ }
+
+  def following? user 
+    self.followeds.include? user
+  end
+
+  def follow user 
+    Relationship create follower_id: self.id, followed_id: user.id
+  end
 
   private 
 

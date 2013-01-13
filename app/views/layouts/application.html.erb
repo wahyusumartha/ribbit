@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header> 
+		<div class="wrapper">
+			<%= image_tag('gfx/logo.png') %>
+			<span>Twitter Clone</span>
+		</div>
+	</header>
 
-<%= yield %>
+	<div id="content">
+		<div class="wrapper">
+			<%= yield %>
+		</div>
+	</div>
+
+	<footer>
+		<div class="wrapper">
+			Ribbit - A Twitter Clone Tutorial <%= image_tag('gfx/logo-nettuts.png') %>
+		</div>
+	</footer>
 
 </body>
 </html>

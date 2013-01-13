@@ -7,8 +7,7 @@ class SessionsController < ApplicationController
   	user = User.find_by_username(params[:username])
   	if user && user.authenticate(params[:password])
   		session[:user_id] = user.id
-  		@user = user
-  		redirect_to @user, notice: "logged in"
+  		redirect_to current_user, notice: "logged in"
   	else 
   		flash[:error] = "Wrong username and password"
   		redirect_to root_url

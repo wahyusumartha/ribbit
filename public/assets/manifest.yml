@@ -1,0 +1,27 @@
+---
+gfx/bg-button.png: gfx/bg-button-a2376b86e2d6ed5dbc85540cf36115fe.png
+gfx/bg-button/index.png: gfx/bg-button-a2376b86e2d6ed5dbc85540cf36115fe.png
+gfx/bg-footer.png: gfx/bg-footer-f454d956b50c4f5be6ec2f5715273417.png
+gfx/bg-footer/index.png: gfx/bg-footer-f454d956b50c4f5be6ec2f5715273417.png
+gfx/bg-header.png: gfx/bg-header-f90000bcb563c7fc35b3eecffe52d6fc.png
+gfx/bg-header/index.png: gfx/bg-header-f90000bcb563c7fc35b3eecffe52d6fc.png
+gfx/bg.png: gfx/bg-e24744cb10c9f62b754107cd5ad3901b.png
+gfx/bg/index.png: gfx/bg-e24744cb10c9f62b754107cd5ad3901b.png
+gfx/frog.jpg: gfx/frog-53fefd70fecd43777f13e4040a8dfb36.jpg
+gfx/frog/index.jpg: gfx/frog-53fefd70fecd43777f13e4040a8dfb36.jpg
+gfx/logo-nettuts.png: gfx/logo-nettuts-dd04e1a763d23c608ee31941862dfa30.png
+gfx/logo-nettuts/index.png: gfx/logo-nettuts-dd04e1a763d23c608ee31941862dfa30.png
+gfx/logo.png: gfx/logo-02e5fbd930561655b63f0811135a01d9.png
+gfx/logo/index.png: gfx/logo-02e5fbd930561655b63f0811135a01d9.png
+gfx/user1.png: gfx/user1-d9d488bb8d14e429d9340b3527db2144.png
+gfx/user1/index.png: gfx/user1-d9d488bb8d14e429d9340b3527db2144.png
+gfx/user2.png: gfx/user2-4c3508460ce194b1fc55b89b13b4c871.png
+gfx/user2/index.png: gfx/user2-4c3508460ce194b1fc55b89b13b4c871.png
+gfx/user3.png: gfx/user3-4df8a3bbd07fe0be7c77d763972b1516.png
+gfx/user3/index.png: gfx/user3-4df8a3bbd07fe0be7c77d763972b1516.png
+rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
+rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
+application.js: application-acf7f1c29f1851a8a7fd8a9ef66249b7.js
+application/index.js: application-acf7f1c29f1851a8a7fd8a9ef66249b7.js
+application.css: application-833d1183212cd49d88a20da2fcbf8b47.css
+application/index.css: application-833d1183212cd49d88a20da2fcbf8b47.css

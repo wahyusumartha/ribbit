@@ -8,6 +8,11 @@ class User < ActiveRecord::Base
   has_secure_password
 
   has_many :ribbits
+
+  has_many :follower_relationship, classname: "Relationship", foreign_key: "followed_id"
+  has_many :followed_relationship, classname: "Relationship", foreign_key: "follower_id"
+  has_many :followers, through: :follower_relationship
+  has_many :followeds, through: :followed_relationship
   
   validates :name, :presence => true
   validates :username, :presence => true, :uniqueness => true 

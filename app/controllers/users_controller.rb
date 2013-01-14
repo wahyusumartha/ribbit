@@ -30,12 +30,20 @@ class UsersController < ApplicationController
 				followed_id: @user.id
 			).first_or_initialize if current_user
 
-		if params[:id].to_f === current_user.id
-			# Get Followed Id
-			buddies_ids = current_user.followeds.map(&:id).push(current_user.id)
-			@ribbits = Ribbit.find_all_by_user_id buddies_ids
+		if current_user
+			if params[:id].to_f === current_user.id
+				# Get Followed Id
+				buddies_ids = current_user.followeds.map(&:id).push(current_user.id)
+				@ribbits = Ribbit.find_all_by_user_id buddies_ids
+			else 
+				user = User.find(params[:id])
+				buddies_ids = user.followeds.map(&:id).push(user.id)
+				@ribbits = Ribbit.find_all_by_user_id buddies_ids
+			end
 		else 
-			@ribbits = Ribbit.find_all_by_user_id params[:id]
+			user = User.find(params[:id])
+			buddies_ids = user.followeds.map(&:id).push(user.id)
+			@ribbits = Ribbit.find_all_by_user_id buddies_ids
 		end
 	end
 

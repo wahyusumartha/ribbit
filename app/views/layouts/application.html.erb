@@ -13,6 +13,8 @@
 			<span>Twitter Clone</span>
 			<% if current_user %> 
 				<%= link_to 'Public Ribbits', ribbits_path %>
+				<%= link_to 'My Profile', current_user %>
+				<%= link_to 'Public Users', users_path %>
 				<%= link_to 'Log Out', sessions_destroy_path %>
 			<% else %>  
 		        <%= form_tag sessions_create_path do %>
@@ -35,7 +37,7 @@
 
 	<footer>
 		<div class="wrapper">
-			Ribbit - A Twitter Clone Tutorial <%= image_tag('gfx/logo-nettuts.png') %>
+			Ribbit - A Twitter Clone Tutorial
 		</div>
 	</footer>
 

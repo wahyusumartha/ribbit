@@ -14,7 +14,7 @@
 	<% @ribbits.each do |ribbit| %> 
 		<div class="ribbitWrapper">
 			<a href="<%= user_path ribbit.user %>">
-				<img src="<%= ribbit.user.avatarurl %>"/>
+				<img class="avatar" src="<%= ribbit.user.avatarurl %>"/>
 				<span class="name">@<%= ribbit.user.username %></span>
 			</a>
 			<span class="time"><%= time_ago(ribbit)%></span>

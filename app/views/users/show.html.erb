@@ -35,7 +35,12 @@
 </div>
 <div class="panel left">
 	<h1>Your Ribbits</h1>
-	<div class="ribbitWrapper">
-		More Ribbits Coming!!
-	</div>
+	<% @ribbits.each do |ribbit| %>
+		<div class="ribbitWrapper">
+			<img class="avatar" src="<%= ribbit.user.avatarurl %>"/>
+			<span class="name">@<%= ribbit.user.username %>
+			<span class="time"><%= time_ago(ribbit)%> ago</span>
+			<p><%= ribbit.content %></p>		
+		</div>
+	<% end %>
 </div>

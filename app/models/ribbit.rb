@@ -4,6 +4,6 @@ class Ribbit < ActiveRecord::Base
   belongs_to :user
   attr_accessible :content
 
-  validates :content , :length => { :maximum => 140 }
+  validates :content , :presence => true, :length => { :maximum => 140 }
 
 end

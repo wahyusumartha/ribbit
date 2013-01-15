@@ -12,10 +12,10 @@
 			<%= image_tag('gfx/logo.png') %>
 			<span>Twitter Clone</span>
 			<% if current_user %> 
-				<%= link_to 'Public Ribbits', ribbits_path %>
-				<%= link_to 'My Profile', current_user %>
-				<%= link_to 'Public Users', users_path %>
-				<%= link_to 'Log Out', sessions_destroy_path %>
+				<span class="spacing"><%= link_to 'Public Ribbits', ribbits_path %></span>
+				<span class="spacing"><%= link_to 'My Profile', current_user %></span>
+				<span class="spacing"><%= link_to 'Public Users', users_path %></span>
+				<span class="spacing"><%= link_to 'Log Out', sessions_destroy_path %></span>
 			<% else %>  
 		        <%= form_tag sessions_create_path do %>
 		            <%= text_field_tag :username, nil, placeholder: "username" %>

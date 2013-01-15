@@ -21,7 +21,7 @@ gfx/user3.png: gfx/user3-4df8a3bbd07fe0be7c77d763972b1516.png
 gfx/user3/index.png: gfx/user3-4df8a3bbd07fe0be7c77d763972b1516.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-acf7f1c29f1851a8a7fd8a9ef66249b7.js
-application/index.js: application-acf7f1c29f1851a8a7fd8a9ef66249b7.js
+application.js: application-adb945dc94aef3a9f8815d35a1ba590d.js
+application/index.js: application-adb945dc94aef3a9f8815d35a1ba590d.js
 application.css: application-833d1183212cd49d88a20da2fcbf8b47.css
 application/index.css: application-833d1183212cd49d88a20da2fcbf8b47.css

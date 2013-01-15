@@ -15,6 +15,7 @@
 				<span class="spacing"><%= link_to 'Public Ribbits', ribbits_path %></span>
 				<span class="spacing"><%= link_to 'My Profile', current_user %></span>
 				<span class="spacing"><%= link_to 'Public Users', users_path %></span>
+				<span class="spacing"><%= link_to 'Setting', edit_user_path(current_user.id) %></span>
 				<span class="spacing"><%= link_to 'Log Out', sessions_destroy_path %></span>
 			<% else %>  
 		        <%= form_tag sessions_create_path do %>

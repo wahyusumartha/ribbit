@@ -47,4 +47,22 @@ class UsersController < ApplicationController
 		end
 	end
 
+	def edit 
+		if current_user 
+			@user = current_user
+		else 
+			redirect_to root_url 
+		end
+	end 
+
+	def update
+		@user = User.find(params[:id])
+
+		if @user.update_attributes(params[:user])
+			redirect_to @user, notice: "Your Profile has been updated succesfully"
+		else 
+			render action: "edit"
+		end
+	end 
+
 end

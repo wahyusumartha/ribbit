@@ -1,0 +1,16 @@
+<div class="panel left">
+	<h1>Update Your Profile</h1>
+	<%= form_for @user do |f| %>
+		<% if @user.errors.any? %> 
+			<ul>
+				<% @user.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+			</ul>
+		<% end %>
+		<%= f.text_field :email, placeholder: "email" %>
+		<%= f.text_field :username, placeholder: "username" %>
+		<%= f.text_field :name, placeholder: "name" %><br/>
+		<%= f.submit "Update Account" %> 
+	<% end %>
+</div>
